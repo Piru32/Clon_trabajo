@@ -3,10 +3,10 @@
   "order": [
     1,
     0,
-    1
+    2
   ],
   "seasonal_order": [
-    1,
+    0,
     1,
     1,
     24
@@ -16,25 +16,35 @@
   "enforce_invertibility": false,
   "freq": "h",
   "params": {
-    "ar.L1": 0.05642033124674648,
-    "ma.L1": -0.02337317555554822,
-    "ar.S.L24": -0.15973049573841136,
-    "ma.S.L24": -0.8094942686225111,
-    "sigma2": 0.37616227365279636
+    "ar.L1": 0.9495937243389251,
+    "ma.L1": -0.701744975997804,
+    "ma.L2": -0.151851457023231,
+    "ma.S.L24": -0.8401663284040786,
+    "sigma2": 3964.1336239509874
   },
-  "measurement": "demo",
-  "field": "temperatura_sintetica",
-  "n_observaciones": 504,
+  "measurement": "Server",
+  "field": "Consumo_total",
+  "tag": null,
+  "n_observaciones": 720,
   "rango_entrenamiento": {
-    "inicio": "2026-11-04 15:00:00",
-    "fin": "2026-11-25 14:00:00"
+    "inicio": "2026-09-27 17:00:00",
+    "fin": "2026-10-27 16:00:00"
   },
-  "metricas_test": null,
-  "aic": 879.0926557110283,
-  "entrenado_en": "2026-11-25 15:35 UTC",
+  "metricas_test": {
+    "MAE": 49.9378,
+    "RMSE": 66.0649,
+    "MAPE_%": 18.8684
+  },
+  "metricas_ingenua": {
+    "MAE": 66.0716,
+    "RMSE": 106.9862,
+    "MAPE_%": 25.5302
+  },
+  "aic": 7467.908377015466,
+  "entrenado_en": "2026-10-27 17:22 UTC",
   "versiones": {
     "statsmodels": "0.15.0",
     "pandas": "2.2.3",
-    "numpy": "2.2.5"
+    "numpy": "2.1.3"
   }
 }
